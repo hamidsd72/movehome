@@ -75,6 +75,7 @@
                     <li><a href="{{route('admin.slider-list')}}" class="slide-item">اسلایدر </a> </li>
                     <li><a href="{{route('admin.footer.index')}}" class="slide-item">فوتر </a> </li>
                     <li><a href="{{route('admin.comment-list')}}" class="slide-item">نظرات لندینگ </a> </li>
+                    <li><a href="{{route('admin.file.index')}}" class="slide-item">فایل ها</a> </li>
                 </ul>
             </li>
 

@@ -161,3 +161,4 @@ class ContentController extends Controller {
         return redirect()->back()->withInput()->with('flash_message', 'محتوا با موفقیت حذف شد.');
     }
 }
+

@@ -2,7 +2,8 @@
 						<div class="app-header header">
 							<div class="container-fluid">
 								<div class="d-flex">
-									<a class="header-brand" href="{{route('front.index')}}" target="_blank"">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4774264488206253"
+     crossorigin="anonymous"></script>							<a class="header-brand" href="{{route('front.index')}}" target="_blank"">
 										<img src="{{asset('assets/front/logo3.jpeg')}}" class="header-brand-img desktop-lgo h-100" alt="Dayonelogo">
 										<img src="{{asset('assets/front/logo3.jpeg')}}" class="header-brand-img dark-logo h-100" alt="Dayonelogo">
 										<img src="{{asset('assets/front/logo3.jpeg')}}" class="header-brand-img mobile-logo h-100" alt="Dayonelogo">

@@ -21,6 +21,7 @@ use App\Http\Controllers\Admin\Setting\PsstprojectController;
 use App\Http\Controllers\Admin\Setting\CommentController;
 use App\Http\Controllers\Admin\Setting\PageController;
 use App\Http\Controllers\Admin\Setting\ContentController;
+use App\Http\Controllers\Admin\Setting\FileController;
 
 //Setting
 Route::get('profile', [ProfileController::class,'show'])->name('profile.show');
@@ -41,7 +42,6 @@ Route::resource('contact', ContactController::class);
 Route::get('contact-msg', [ContactController::class, 'msg'])->name('contact-msg');
 
 Route::resource('footer', FooterController::class);
-
 
 // slider
 Route::get('slider-create', [SliderController::class, 'create'])->name('slider-create');
@@ -148,3 +148,6 @@ Route::put('comment-store', [CommentController::class,'store'])->name('comment-s
 Route::get('comment-list', [CommentController::class,'index'])->name('comment-list');
 Route::delete('comment-destroy/{id}', [CommentController::class,'destroy'])->name('comment-destroy');
 Route::get('comment-active/{id}', [CommentController::class,'active'])->name('comment-active');
+
+Route::resource('file', FileController::class);
+

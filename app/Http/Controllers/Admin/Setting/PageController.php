@@ -17,12 +17,16 @@ class PageController extends Controller {
         }
     }
 
+    public function controller_paginate() {
+        return Setting::select('paginate')->latest()->firstOrFail()->paginate;
+    }
+
     public function __construct() {
         $this->middleware('auth');
     }
 
     public function index() {
-        $items = Page::orderByDesc('id')->get();
+        $items = Page::orderByDesc('id')->paginate($this->controller_paginate());
         return view('admin.setting.page.index', compact('items'), ['title' => $this->controller_title('single'), 'title2' => $this->controller_title('sum')]);
     }
 
